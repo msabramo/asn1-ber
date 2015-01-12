@@ -98,13 +98,14 @@ var ClassMap = map[uint8]string{
 }
 
 const (
-	TypePrimative   = 0  // xx0xxxxxb
+	TypePrimative   = 0  // xx0xxxxxb  "Primative" [sic] is misspelled, but kept around for backwards compat
+	TypePrimitive   = 0  // xx0xxxxxb
 	TypeConstructed = 32 // xx1xxxxxb
 	TypeBitmask     = 32 // xx1xxxxxb
 )
 
 var TypeMap = map[uint8]string{
-	TypePrimative:   "Primative",
+	TypePrimitive:   "Primitive",
 	TypeConstructed: "Constructed",
 }
 
